@@ -9,7 +9,20 @@
 </head>
 
 <body>
-    <script src="app.js"></script>
+
+    <div class="container">
+        <h2>Random Password Generator</h2>
+        <input type="text" class="display-pass" readonly>
+
+        <div class="slider-group">
+            <input type="range" min="4" max="15" value="7" class="slider" oninput="displayValue()">
+            <span class="range-value"></span>
+        </div>
+
+        <button class="btn">Generate Password</button>
+
+        <script src="app.js"></script>
+    </div>
 </body>
 
 </html>
